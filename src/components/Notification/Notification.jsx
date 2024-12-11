@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { NotificationMessage } from './Notofocation.styled';
 
 export const Notification = ({ message }) => {
-  return <p>{message}</p>;
+  return <NotificationMessage>{message}</NotificationMessage>;
 };
 
 Notification.propTypes = {
