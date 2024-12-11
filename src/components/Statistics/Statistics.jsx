@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 import { Section } from 'components/Section/Section';
 import { Notification } from 'components/Notification/Notification';
-import { StatisticsItem, StatisticsText } from './Statistics.styled';
+import {
+  StatisticsList,
+  StatisticsItem,
+  StatisticsText,
+} from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -13,7 +17,7 @@ export const Statistics = ({
   return (
     <Section title="Statistics">
       {total ? (
-        <ul>
+        <StatisticsList>
           <StatisticsItem>
             <StatisticsText>Good: {good}</StatisticsText>
           </StatisticsItem>
@@ -31,7 +35,7 @@ export const Statistics = ({
               Positive feedback: {positivePercentage}%
             </StatisticsText>
           </StatisticsItem>
-        </ul>
+        </StatisticsList>
       ) : (
         <Notification message="There is no feedback" />
       )}
