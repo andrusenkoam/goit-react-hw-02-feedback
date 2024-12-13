@@ -15,29 +15,19 @@ export const Statistics = ({
       {total ? (
         <StatisticsList>
           <StatisticsItem>
-            <p>
-              Good: <span>{good}</span>
-            </p>
+            <p>Good: {good}</p>
           </StatisticsItem>
           <StatisticsItem>
-            <p>
-              Neutral: <span>{neutral}</span>
-            </p>
+            <p>Neutral: {neutral}</p>
           </StatisticsItem>
           <StatisticsItem>
-            <p>
-              Bad: <span>{bad}</span>
-            </p>
+            <p>Bad: {bad}</p>
           </StatisticsItem>
           <StatisticsItem>
-            <p>
-              Total: <span>{total}</span>
-            </p>
+            <p>Total: {total}</p>
           </StatisticsItem>
           <StatisticsItem>
-            <p>
-              Positive feedback: <span>{positivePercentage}%</span>
-            </p>
+            <p>Positive feedback: {positivePercentage}%</p>
           </StatisticsItem>
         </StatisticsList>
       ) : (
