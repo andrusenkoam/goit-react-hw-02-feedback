@@ -10,7 +10,7 @@ export const Container = styled.div`
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 400px;
+  width: 300px;
 `;
 
 export const SectionTitle = styled.h2`

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StatisticsList = styled.ul`
-  padding-left: 70px;
+  /* padding-left: 70px; */
 `;
 
 export const StatisticsItem = styled.li`
