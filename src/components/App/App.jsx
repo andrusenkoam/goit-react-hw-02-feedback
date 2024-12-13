@@ -33,6 +33,7 @@ export class App extends Component {
           onLeaveFeedback={this.hendleButton}
         />
         <Statistics
+          options={btnTitle}
           good={good}
           neutral={neutral}
           bad={bad}

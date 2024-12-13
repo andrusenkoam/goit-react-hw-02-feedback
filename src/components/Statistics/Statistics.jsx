@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
 import { Section } from 'components/Section/Section';
 import { Notification } from 'components/Notification/Notification';
-import {
-  StatisticsList,
-  StatisticsItem,
-  StatisticsText,
-} from './Statistics.styled';
+import { StatisticsList, StatisticsItem } from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -19,21 +15,29 @@ export const Statistics = ({
       {total ? (
         <StatisticsList>
           <StatisticsItem>
-            <StatisticsText>Good: {good}</StatisticsText>
+            <p>
+              Good: <span>{good}</span>
+            </p>
           </StatisticsItem>
           <StatisticsItem>
-            <StatisticsText>Neutral: {neutral}</StatisticsText>
+            <p>
+              Neutral: <span>{neutral}</span>
+            </p>
           </StatisticsItem>
           <StatisticsItem>
-            <StatisticsText>Bad: {bad}</StatisticsText>
+            <p>
+              Bad: <span>{bad}</span>
+            </p>
           </StatisticsItem>
           <StatisticsItem>
-            <StatisticsText>Total: {total}</StatisticsText>
+            <p>
+              Total: <span>{total}</span>
+            </p>
           </StatisticsItem>
           <StatisticsItem>
-            <StatisticsText>
-              Positive feedback: {positivePercentage}%
-            </StatisticsText>
+            <p>
+              Positive feedback: <span>{positivePercentage}%</span>
+            </p>
           </StatisticsItem>
         </StatisticsList>
       ) : (
@@ -44,6 +48,7 @@ export const Statistics = ({
 };
 
 Statistics.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
